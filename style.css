@@ -1,0 +1,42 @@
+.container{
+    max-width: 600px;
+    margin: 50px auto; /* Centrage horizontal et marge supérieure */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le texte dans le conteneur */
+}
+
+#color-box {
+    width: 100px; /* Largeur fixe */
+    height: 100px; /* Hauteur fixe */
+    background-color: #cccccc; /* Couleur d'arrière-plan par défaut */
+    border-radius: 8px; /* Optionnel : coins arrondis pour un design moderne */
+    display: inline-block; /* Assure que l'élément respecte ses dimensions */
+}
+
+#change-color-btn {
+    display: inline-block; /* Permet d'être cliquable et respecte les marges/paddings */
+    padding: 10px 20px; /* Espacement intérieur pour agrandir la zone cliquable */
+    font-size: 16px; /* Taille de police pour une bonne lisibilité */
+    color: white; /* Couleur du texte */
+    background-color: #007BFF; /* Couleur de fond bleu */
+    border: none; /* Supprime les bordures par défaut */
+    border-radius: 5px; /* Coins arrondis pour un look moderne */
+    cursor: pointer; /* Change le curseur en "main" */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    transition: background-color 0.3s, transform 0.2s; /* Effet d'animation */
+}
+
+#change-color-btn:hover {
+    background-color: rgba(255, 255, 0, 0.808); /* Change la couleur de fond au survol */
+    transform: scale(1.05); /* Légèrement agrandi au survol */
+    font-weight: bold;
+    color: black;
+}
+
+#change-color-btn:active {
+    background-color: #004080; /* Couleur plus foncée lors du clic */
+    transform: scale(0.95); /* Effet d'appui */
+}
